@@ -3,7 +3,7 @@ make && ./minishell
 
 # minishell
 
-Проект по созданию собственного Shell на языке С (аналогичый Bash). [Полный Subject (задача Ecole42)](https://cdn.intra.42.fr/pdf/pdf/43461/en.subject.pdf) <br>
+Проект по созданию собственного Shell на языке С (за основу взят Bash). [Полный Subject (задача Ecole42)](https://cdn.intra.42.fr/pdf/pdf/43461/en.subject.pdf) <br>
 Реализованые задачи:<br>
 1. Имплементированы следующие builtins:<br>
 ◦ echo <br>
