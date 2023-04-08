@@ -59,6 +59,8 @@ RM = rm -f
 
 INC_DIR 	= ./includes/
 
+SRC_DIR		= ./src/
+
 LDLIBS = -lreadline
 
 RL_INC_DIR	:=	$(HOMEBREW_PREFIX)/opt/readline/include
@@ -81,7 +83,7 @@ $(NAME)	:	$(OBJS) $(LIBDIR)$(LIBFT)
 			@$(CC)  $(CFLAGS) $(CPPFLAGS) -g $(LDFLAGS) $(LIBFT) $(LDLIBS) $(OBJS) -o $@  
 			@printf "\e[38;5;226m./$@ successfully build\n"
 
-%.o 	: 	%.c
+%.o 	: 	$(SRC_DIR)%.c
 			@$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
 
 -include $(DEP)
